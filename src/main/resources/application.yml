@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: recipes-search
+    version: 1.0.0
+  elasticsearch:
+    host: localhost
+    port: 9200
+    apiKey: eDlFWk01Z0JnREhsNDdoTDM2YXc6UmRDcUxiMVFGRngxR3poM3FVUElSdw==
+    username: elastic
+    password: fzWMc4DH
+
+server:
+  port: 8080

@@ -1,5 +1,7 @@
 package com.recipes.entity;
 
+import lombok.Builder;
+
 // import org.springframework.data.elasticsearch.annotations.Document;
 // import org.springframework.data.elasticsearch.annotations.Field;
 // import org.springframework.data.elasticsearch.annotations.FieldType;
@@ -7,7 +9,7 @@ package com.recipes.entity;
 // import jakarta.persistence.Id;
 import lombok.Data;
 
-// @Data
+@Data
 // @Document(indexName = "recipes")
 public class Recipe {
   // @Id

@@ -1,34 +1,30 @@
 package com.recipes.service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.recipes.dto.RecipeDTO;
-import com.recipes.entity.Recipe;
 
 @Service
 public class SearchServiceImpl implements SearchService {
 
+  Logger logger = LoggerFactory.getLogger(SearchServiceImpl.class);
+
   public SearchServiceImpl() {
-    // this.elasticsearchOperations = elasticsearchOperations;
   }
 
   @Override
   public List<RecipeDTO> search(String searchTerm, int cookingTime) {
 
-    return null;
-  }
+    try {
+      logger.info("client connected");
 
-  private RecipeDTO convertToDTO(Recipe recipe) {
-    RecipeDTO dto = new RecipeDTO();
-    // dto.setId(recipe.getId());
-    // dto.setName(recipe.getRecipeName());
-    // dto.setPrepTime(recipe.getPrepTime());
-    // dto.setCookTime(recipe.getCookTime());
-    // dto.setIngredients(recipe.getIngredients());
-    // dto.setRating(recipe.getRating());
-    return dto;
+    } catch (Exception e) {
+
+    }
+    return null;
   }
 }
