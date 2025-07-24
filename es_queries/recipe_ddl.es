@@ -1,0 +1,4 @@
+GET /recipes/_doc
+{
+  "": ""
+}

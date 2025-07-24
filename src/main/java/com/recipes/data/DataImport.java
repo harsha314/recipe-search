@@ -77,6 +77,12 @@ public class DataImport implements CommandLineRunner {
       String[] nutrients = nutrition.split(",");
       Arrays.stream(nutrients).forEach(nutrient -> {
         String[] info = nutrient.split(" ");
+        if (info.length == 2) {
+
+        } else if (info.length == 3) {
+        } else if (info.length == 4) {
+
+        }
       });
       RecipeDTO recipeDTO = RecipeDTO.builder()
           .id(id)
