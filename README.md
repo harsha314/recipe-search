@@ -64,6 +64,7 @@ Build a Spring Boot application that allows users to search, filter, and view re
 - Frontend options:
   - Basic HTML/JavaScript
   - React/Angular/Vue
+  <!--
 
 ## Implementation Guide
 
@@ -88,4 +89,4 @@ spring:
 Create Recipe.java with appropriate annotations:
 
 - `@Document`
-- `@Id
+- `@Id -->
